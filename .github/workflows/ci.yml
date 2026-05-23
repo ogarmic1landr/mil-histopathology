@@ -3,6 +3,8 @@ on:
   push:
     branches: [main]
   pull_request:
+    paths-ignore:
+    - '**/*.ipynb'
 jobs:
   lint:
     runs-on: ubuntu-latest
